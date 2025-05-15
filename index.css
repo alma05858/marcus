@@ -20,6 +20,7 @@ header {
   justify-content: space-between; /* Gør det muligt at placere elementer korrekt */
   padding: 20px;
   background-color: #ffffff;
+  position: relative;
 }
 
 .logo {
@@ -27,9 +28,9 @@ header {
 }
 
 nav {
-  flex: 1;
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 
 .menu {
@@ -92,10 +93,11 @@ nav {
   }
 
   nav.active .menu {
+    position: absolute;
     display: block;
     background-color: #ffffff;
     text-align: right;
-    top: 94px;
+    top: 77px;
     left: 0;
     width: 100%;
   }
