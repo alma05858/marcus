@@ -1,0 +1,273 @@
+/************** reset ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*********************************/
+
+/************** Menu (desktop) **************/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Gør det muligt at placere elementer korrekt */
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 75px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "B612 Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.menu li a.active {
+  border-bottom: 2px solid #000;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    text-align: right;
+    top: 94px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/********************************/
+
+/****************** basics *************/
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  font-family: "B612 Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  font-family: "B612 Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*****************************************/
+
+/****************** maudes intro  sektion *************/
+
+.maudes-intro {
+  background-color: #f7eee5;
+}
+
+.maudes-intro img {
+  width: 250px;
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.maudes-intro p {
+  align-self: center;
+  display: block;
+  margin: 0 300px;
+}
+
+@media (width < 700px) {
+  .maudes-intro p {
+    margin: 0 100px;
+    text-align: center;
+  }
+}
+
+/*********************************************/
+
+/****************** maudes intro  sektion2 *************/
+
+.maudes-intro2 {
+  background-color: #f7eee5;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .grid_1-1 {
+    display: block;
+  }
+}
+
+/*********************************************/
+
+/************* insta sektion *************/
+
+.instagram-sektion {
+  background-color: #ffffff;
+}
+
+.insta-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.insta-scroll img {
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .instagram-div h2 {
+    margin: 0 50px;
+    text-align: center;
+  }
+
+  .insta-scroll {
+    width: 100%;
+  }
+
+  .insta-scroll img {
+    width: 200px;
+  }
+}
+
+/*****************************************/
+
+/************* selskabs sektion *************/
+
+.selskab-sekstion {
+  background-color: #d39c42;
+}
+
+@media (max-width: 800px) {
+  .selskab-sekstion h2 {
+    margin: 0 30px;
+    text-align: center;
+  }
+
+  .selskab-sekstion p {
+    margin: 0 30px;
+    text-align: center;
+  }
+}
+
+/********************************************/
+
+/************** gavekort sektion ************/
+
+.gavekort-sektion {
+  background-color: #f7eee5;
+}
+
+/********************************************/
+
+/************** åbningstider-adresse-sektion ************/
+
+.åbningstider-adresse-sektion {
+  background-color: #f7eee5;
+}
+
+@media (max-width: 800px) {
+  .åbningstider-adresse-sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/********************************************************/
+
+/******************** grids ***************/
+
+/*****************************************/
